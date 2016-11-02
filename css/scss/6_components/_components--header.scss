@@ -1,0 +1,47 @@
+/* Components
+==================================
+--- Header
+------------------------------ */
+
+.site-header {
+	padding: 20px 0;
+	background: $reverse_bg_color;
+	color: $reverse_text_color;
+	width: 100%;
+	position: relative;
+	transition: width $base_transition;
+	
+	@include breakpoint("medium") {
+		width: 70%;
+	    margin: 0 auto 40px;
+	}
+
+	h1 {
+		@include breakpoint("medium") {
+			font-size: rem(40px);
+		}
+
+		@include breakpoint("large") {
+			font-size: rem(60px);
+		}
+	}
+
+	.search-container {
+
+	}
+
+	@include breakpoint("large") {
+
+	}
+}
+
+.flipped {
+	.site-header {
+		background: $bg_color;
+		color: $text_color;
+
+		h1 {
+			color: $text_color;
+		}
+	}
+}

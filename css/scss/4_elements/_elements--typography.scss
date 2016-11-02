@@ -1,0 +1,107 @@
+/* Elements
+==================================
+--- Typography
+------------------------------ */
+
+body {
+  color: $text_color;
+  font-family: $paragraph_font_family;
+  font-weight: $paragraph_font_weight;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $paragraph_font_size;
+  line-height: $paragraph_line_height;
+  letter-spacing: .125rem;
+}
+
+
+// Headings
+// --------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header_font_family;
+  font-weight:$header_font_weight;
+  color: $header_color;
+  line-height: $header_line_height;
+  letter-spacing: 0.125rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: rem(30px);
+  text-align: center;
+
+  @include breakpoint("large") {
+    font-size: rem(50px);
+  }
+
+}
+
+h2 {
+  font-size: rem(18px);
+  
+  @include breakpoint("large") {
+    font-size: rem(30px); 
+  }
+}
+
+h3 {
+  font-size: rem(18px);
+}
+
+h4 {
+  font-size: rem(16px);
+}
+
+h5, h6 {}
+
+// Paragraphs
+// --------------------
+
+p {
+  margin: 0 0 .75em;
+  
+}
+
+// strong, b {
+// }
+
+small {
+  font-size: rem(12px);
+}
+
+
+// Links
+// --------------------
+
+a {
+  color: $link_color;
+  text-decoration: none;
+  transition: color $base_transition;
+  &:hover {
+    color: $link_color_hover;
+    transition: color $base_transition;
+  }
+}
+
+
+// Blockquotes
+// --------------------
+
+// blockquote {
+// }
+
+// cite {  
+// }
+
+
+// Line Rules
+// --------------------
+
+hr {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 10px auto;
+  max-width: $container_max_width;
+}

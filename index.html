@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Find an Image</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+</head>
+<body>
+	<header id="header" class="site-header" role="banner">
+		<h1>Find an Image</h1>
+		<div class="search-container">
+			<label class="search-label" for="search">Search <span>Files by Title:</span></label>
+			<input id="search" type="text" placeholder="Search..." data-bind="value: input, valueUpdate: 'keyup'">	
+		</div>
+		<a href="#" id="flip-it-button" class="button">Opposite Day?</a>
+	</header> <!-- .site-header -->
+	<main id="main" class="site-main" role="main">
+		<div class="content">
+			<section>
+				<div class="photo-list-container">
+					<div id="loader" class="loader" class="visuallyhidden">Loading...</div>
+					<ul class="photo-list row" data-bind="foreach: filteredList">
+						<li class="thumbnail" data-bind="style: { backgroundImage: 'url(\'' + imgSrc + '\')' }">
+							<div class="title" data-bind="text: title"></div>
+						</li>
+					</ul>
+				</div>
+
+			</section> <!-- section -->
+
+		</div> <!-- .content -->
+	</main> <!-- .site-main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<p><a href="http://emzil.la" target="_blank">Make it so!</a></p>
+			<p><small>&copy;2016 Emily Davidson</small></p>
+		</div><!-- .site-info -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/global.js"></script>
+	</footer><!-- .site-footer -->
+</body>
+</html>

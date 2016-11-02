@@ -1,0 +1,22 @@
+/* Components
+==================================
+--- Footer
+------------------------------ */
+
+.site-footer {
+	position: relative;
+	background: $reverse_bg_color;
+	color: $reverse_text_color;
+	text-align: center;
+	padding: 40px 0 60px;
+	text-transform: uppercase;
+
+	&:after {
+		position: absolute;
+		content: "";
+		display: block;
+		background: $footer_bg;
+		width: 100%;
+		height: 100%;
+	}
+}

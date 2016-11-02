@@ -1,0 +1,48 @@
+// Settings
+// ==================================
+// --- Type
+// ----------------------------------
+
+// Typography Settings
+// ----------------------------------
+
+// Custom Fonts
+// ----------------------------------
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Titillium+Web:600');
+
+// Base Size (must use px value)
+// ----------------------------------
+$base_line_height: 1.7;
+$base_font_size: rem(16px);
+
+
+// Headings
+// ----------------------------------
+$header_font_family: 'Titillium Web', Helvetica, Arial, sans-serif;
+$header_font_weight: 600;
+$header_line_height: 1.3;
+$header_top_margin: 5px;
+$header_bottom_margin: 20px;
+$header_text_rendering: optimizeLegibility;
+$header_color: $reverse_text_color;
+
+
+// Paragraphs
+// ----------------------------------
+$paragraph_font_family: 'Space Mono', monospace;
+$paragraph_font_weight: 400;
+$paragraph_font_size: $base_font_size;
+$paragraph_line_height: $base_line_height;
+$paragraph_margin_bottom: 20px;
+$paragraph_text_rendering: optimizeLegibility;
+
+
+// Links
+// ----------------------------------
+$link_text_decoration: none;
+
+
+// Blockquotes
+// ----------------------------------
+$blockquote_padding: 10px 20px;
+$blockquote_margin: 0 0 20px;

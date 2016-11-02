@@ -1,0 +1,80 @@
+// =================================
+// Import all the styles
+// =================================
+
+/* 1. Settings
+================================== */
+// --- Variables
+// ------------------------------
+	@import "bourbon/bourbon";
+	@import "1_settings/settings--colors";
+	@import "1_settings/settings--global";
+	@import "1_settings/settings--type";
+
+
+/* 2. Tools
+==================================  */
+// --- Functions, Mixins, Libraries
+// ------------------------------
+	@import "2_tools/tools--mixins";
+
+
+/* 3. Generic
+================================== */
+// --- Low-specificity rulesets
+// --- Normalize/Reset, global rules
+// ------------------------------
+	@import "3_generic/generic--box-sizing";
+	@import "3_generic/generic--normalize";
+	@import "3_generic/generic--reset";
+	@import "3_generic/generic--shared";
+	@import "3_generic/generic--grid";
+
+
+/* 4. Elements
+================================== */
+// --- Unclassed HTML elements, typography, etc.
+// ------------------------------
+	@import "4_elements/elements--forms";
+	@import "4_elements/elements--images";
+	@import "4_elements/elements--links";
+	@import "4_elements/elements--lists";
+	@import "4_elements/elements--typography";
+
+
+/* 5. Objects
+================================== */
+// --- Design-free objects
+// --- Patterns, wrappers & layout systems
+// ------------------------------
+	@import "5_objects/objects--layout";
+	// @import "5_objects/objects--media";
+	// @import "5_objects/objects--wrappers";
+
+
+/* 6. Components
+==================================  */
+// --- Components and Features
+// --- Usually have >1 selector
+// ------------------------------
+	@import "6_components/components--buttons";
+	@import "6_components/components--footer";
+	@import "6_components/components--header";
+	@import "6_components/components--header-search";
+	@import "6_components/components--thumbnails";
+
+
+/* 7. Vendors
+==================================  */
+// --- 3rd party style overrides
+// ------------------------------
+	// @import "7_vendors/vendors";
+
+
+/* 8. Trumps
+================================== */
+// --- Helper classes and overrides 
+// --- Highest specificity layer
+// ------------------------------
+	// @import "8_trumps/trumps--links";
+	// @import "8_trumps/trumps--widths";

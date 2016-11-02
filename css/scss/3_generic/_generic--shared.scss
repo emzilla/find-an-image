@@ -1,0 +1,38 @@
+/* Generic
+==================================
+--- Shared
+------------------------------ */
+
+.visuallyhidden {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	width: 1px; 
+	margin: -1px; 
+	padding: 0; 
+	border: 0;
+}
+
+
+// General
+// -----------------
+
+html {
+  height: 100%;
+}
+
+body {
+	background: $bg_color;
+	min-height: 100%;
+
+    // Allow Mobile Elasticity
+    -webkit-overflow-scrolling: touch;
+    
+    * { box-sizing: border-box; }
+
+    &.flipped {
+    	background: $reverse_bg_color;
+    }
+}
+

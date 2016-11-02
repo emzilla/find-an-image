@@ -1,0 +1,13 @@
+/* Elements
+==================================
+--- Forms
+------------------------------ */
+
+input {
+	border: none;
+	padding: 4px 10px;
+
+	&:focus {
+		outline: none;
+	}
+}

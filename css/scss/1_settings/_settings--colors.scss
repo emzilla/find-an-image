@@ -1,0 +1,39 @@
+// Settings
+// ==================================
+// --- Color
+// ----------------------------------
+
+// Color Settings
+// ----------------------------------
+
+// Set up color names
+// ----------------------------------
+$lt_blue: #eef0f4;
+$dk_gray: #1e1d1d;
+$green: #cbe347;
+$md_blue: #d8dbe2;
+
+
+// Brand Specific
+// ----------------------------------
+$brand_primary: $lt_blue;
+$brand_secondary: $dk_gray;
+$brand_tertiary: $green;
+$brand_accent_1: $md_blue;
+
+
+// Global Color Settings
+// ----------------------------------
+$bg_color: $brand_primary;
+$reverse_bg_color: $brand_secondary;
+$header_bg: $brand_secondary;
+$footer_bg: $brand_secondary;
+
+
+// Text and Links
+// ----------------------------------
+$text_color: $brand_secondary;
+$reverse_text_color: $brand_primary;
+$link_color: $brand_tertiary;
+$link_color_hover: tint($brand_tertiary, 15%);
+

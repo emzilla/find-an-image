@@ -1,0 +1,36 @@
+/* Components
+==================================
+--- Buttons
+------------------------------ */
+
+.button {
+	width: 150px;
+	padding: 10px 20px;
+	background: $brand_tertiary;
+	color: $text_color;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $header_font_family;
+
+	@include breakpoint("large") {
+		position: absolute;
+		right: -150px;
+		bottom: 30px;
+	}
+
+	&:hover {
+		background: $brand_secondary;
+		color: $brand_tertiary;
+	}
+}
+
+.flipped {
+	.button {
+		background: $brand_tertiary;
+		color: $brand_secondary;
+		&:hover {
+			background: $brand_secondary;
+			color: $brand_tertiary;
+		}	
+	}
+}
