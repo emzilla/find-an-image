@@ -2,7 +2,9 @@
 
 Finding an image from the NASA Flickr API based on title name.
 
-See a demo here: [http://emzil.la/find-an-image/index.html].
+Using HTML, Sass, jQuery and Knockout.
+
+See a demo here: http://emzil.la/find-an-image/index.html.
 
 Based on my own site framework.
 
